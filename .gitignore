@@ -1,0 +1,12 @@
+/node_modules
+/dist
+/dist/404*
+/.vscode
+/haters
+.DS_Store
+/fonts
+README.md
+LICENSE
+/src/index.html.txt
+/src/images
+notes.txt
