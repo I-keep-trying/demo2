@@ -204,6 +204,12 @@
     </div>
   </div>
 
+  <nav class="float-action-button">
+      <a href="#top" class="buttons">
+        <i class="fas fa-angle-double-up top-icon"></i>
+      </a>
+    </nav>
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -215,6 +221,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
     integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
   <script src="/src/index.js"></script>
+
+  <script>
+  $(document).ready(function() {
+  $("a[href*='#']").click(function(event) {
+    event.preventDefault()
+    $('html,body').animate({scrollTop: $(this.hash).offset().top}, 500)
+  })
+})
+  </script>
 </body>
 
 </html>

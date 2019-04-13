@@ -89,11 +89,6 @@ module.exports = {
       template: './index.html',
       inject: 'head'
     }),
-    new HtmlWebpackPlugin({
-      filename: '404.html',
-      template: './src/404.html',
-      inject: 'head'
-    }),
     new PreloadWebpackPlugin({
       rel: 'preload',
       as(entry) {
@@ -102,9 +97,7 @@ module.exports = {
       fileWhitelist: [/\.(woff|woff2|ttf|otf)$/],
       include: 'allAssets'
     }),
-    new ScriptExtHtmlWebpackPlugin({
-      defaultAttribute: 'defer'
-    }),
+
     new MiniCssExtractPlugin({
       filename: 'webpack-bundle.css',
       chunkFilename: '[id].css'
